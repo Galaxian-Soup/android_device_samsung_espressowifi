@@ -96,7 +96,7 @@ PRODUCT_COPY_FILES += \
 	frameworks/base/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
-# LPM
+# LPM (from TW-UX)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/bin/lpmkey:system/bin/lpmkey \
     $(LOCAL_PATH)/prebuilt/bin/playlpm:system/bin/playlpm \
@@ -117,7 +117,6 @@ PRODUCT_COPY_FILES += \
 
 # Build characteristics setting
 PRODUCT_CHARACTERISTICS := tablet
-
 # 7" tablet is "large" at 160dpi (169.x) is mdpi, but it's lying..
 PRODUCT_AAPT_CONFIG := normal mdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
@@ -157,7 +156,7 @@ endif
 $(call inherit-product, frameworks/base/build/tablet-dalvik-heap.mk)
 
 # Call the vendor to setup proprietary files
-$(call inherit-product-if-exists, vendor/samsung/espressowifi/espressowifi-vendor.mk)
+#$(call inherit-product-if-exists, vendor/samsung/espressowifi/espressowifi-vendor.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_espressowifi
