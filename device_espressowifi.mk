@@ -54,6 +54,22 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/audio/espressowifi.xml:system/etc/sound/espressowifi.xml
 
+# LPM (from TW-UX)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/lpm/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
+    $(LOCAL_PATH)/lpm/bin/playlpm:system/bin/playlpm \
+    $(LOCAL_PATH)/lpm/media/battery_charging_0.qmg:system/media/battery_charging_0.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+    $(LOCAL_PATH)/lpm/media/battery_error.qmg:system/media/battery_error.qmg \
+    $(LOCAL_PATH)/lpm/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
+    $(LOCAL_PATH)/lpm/media/Disconnected.qmg:system/media/Disconnected.qmg \
+    $(LOCAL_PATH)/lpm/media/Disconnected.qmg:system/media/bootsamsungloop.qmg \
+    $(LOCAL_PATH)/lpm/media/Disconnected.qmg:system/media/bootsamsung.qmg 
+
 # Input device configuration files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/espresso-gpio-keypad.kl:system/usr/keylayout/espresso-gpio-keypad.kl \
@@ -88,8 +104,8 @@ PRODUCT_COPY_FILES += \
 
 # Build characteristics setting
 PRODUCT_CHARACTERISTICS := tablet
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi xlarge
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_CONFIG := normal hdpi mdpi 
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_LOCALES += hdpi
 
 # This device has enough room for precise dalvik
