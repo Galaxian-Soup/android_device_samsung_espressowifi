@@ -75,6 +75,8 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1468006400
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5003787264
 BOARD_FLASH_BLOCK_SIZE := 4096
 
+# Set kernel config
+#TARGET_KERNEL_CONFIG := espresso_defconfig
 # prebuilt kernel
 TARGET_PREBUILT_KERNEL := device/samsung/espressowifi/kernel
 

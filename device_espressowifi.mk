@@ -133,13 +133,8 @@ PRODUCT_COPY_FILES += \
 
 # Build characteristics setting
 PRODUCT_CHARACTERISTICS := tablet
-# 7" tablet is "large" at 160dpi (169.x) is mdpi, but it's lying..
-PRODUCT_AAPT_CONFIG := normal mdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := mdpi
-
-#PRODUCT_AAPT_CONFIG := normal hdpi mdpi 
-#PRODUCT_AAPT_PREF_CONFIG := hdpi
-#PRODUCT_LOCALES += hdpi
+PRODUCT_AAPT_CONFIG := normal hdpi mdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # This device has enough room for precise dalvik
 PRODUCT_TAGS += dalvik.gc.type-precise
