@@ -133,8 +133,8 @@ PRODUCT_COPY_FILES += \
 
 # Build characteristics setting
 PRODUCT_CHARACTERISTICS := tablet
-PRODUCT_AAPT_CONFIG := normal hdpi mdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_AAPT_CONFIG := large mdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 # This device has enough room for precise dalvik
 PRODUCT_TAGS += dalvik.gc.type-precise
