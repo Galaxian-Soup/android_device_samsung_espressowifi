@@ -38,12 +38,12 @@ PRODUCT_COPY_FILES += \
 
 # Modules
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
-    $(LOCAL_PATH)/modules/dhd.ko:system/lib/modules/dhd.ko \
-    $(LOCAL_PATH)/modules/mwlan_aarp.ko:system/lib/modules/mwlan_aarp.ko \
-	$(LOCAL_PATH)/modules/rpmsg_client_sample.ko:system/lib/modules/rpmsg_client_sample.ko \
-    $(LOCAL_PATH)/modules/rpmsg_server_sample.ko:system/lib/modules/rpmsg_server_sample.ko \
-    $(LOCAL_PATH)/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
+    $(LOCAL_PATH)/prebuilt/lib/modules/ansi_cprng.ko:system/lib/modules/ansi_cprng.ko \
+    $(LOCAL_PATH)/prebuilt/lib/modules/dhd.ko:system/lib/modules/dhd.ko \
+    $(LOCAL_PATH)/prebuilt/lib/modules/mwlan_aarp.ko:system/lib/modules/mwlan_aarp.ko \
+	$(LOCAL_PATH)/prebuilt/lib/modules/rpmsg_client_sample.ko:system/lib/modules/rpmsg_client_sample.ko \
+    $(LOCAL_PATH)/prebuilt/lib/modules/rpmsg_server_sample.ko:system/lib/modules/rpmsg_server_sample.ko \
+    $(LOCAL_PATH)/prebuilt/lib/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
 
 # Prebuilt configuration files
 PRODUCT_COPY_FILES += \
@@ -53,22 +53,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/vold.fstab:system/etc/vold.fstab \
     $(LOCAL_PATH)/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/audio/espressowifi.xml:system/etc/sound/espressowifi.xml
-
-# LPM (from TW-UX)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/lpm/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
-    $(LOCAL_PATH)/lpm/bin/playlpm:system/bin/playlpm \
-    $(LOCAL_PATH)/lpm/media/battery_charging_0.qmg:system/media/battery_charging_0.qmg \
-    $(LOCAL_PATH)/lpm/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
-    $(LOCAL_PATH)/lpm/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
-    $(LOCAL_PATH)/lpm/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
-    $(LOCAL_PATH)/lpm/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
-    $(LOCAL_PATH)/lpm/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
-    $(LOCAL_PATH)/lpm/media/battery_error.qmg:system/media/battery_error.qmg \
-    $(LOCAL_PATH)/lpm/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
-    $(LOCAL_PATH)/lpm/media/Disconnected.qmg:system/media/Disconnected.qmg \
-    $(LOCAL_PATH)/lpm/media/Disconnected.qmg:system/media/bootsamsungloop.qmg \
-    $(LOCAL_PATH)/lpm/media/Disconnected.qmg:system/media/bootsamsung.qmg 
 
 # Input device configuration files
 PRODUCT_COPY_FILES += \
@@ -92,6 +76,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     $(LOCAL_PATH)/prebuilt/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
     $(LOCAL_PATH)/prebuilt/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
+    $(LOCAL_PATH)/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+    $(LOCAL_PATH)/prebuilt/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf \
     $(LOCAL_PATH)/prebuilt/vendor/firmware/BCM4330.hcd:system/vendor/firmware/BCM4330.hcd \
     $(LOCAL_PATH)/prebuilt/vendor/firmware/ducati-m3.bin:system/vendor/firmware/ducati-m3.bin
 

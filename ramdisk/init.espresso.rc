@@ -229,7 +229,6 @@ on fs
     chown system system /sys/class/sec/sec_ir/ir_send
     chown system system /sys/class/sec/sec_ir/check_ir
 
-
 # Battery
 	chown system radio /sys/class/power_supply/battery/batt_reset_soc
     chmod 0664 /sys/class/power_supply/battery/batt_reset_soc
