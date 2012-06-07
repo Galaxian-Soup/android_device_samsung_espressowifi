@@ -26,6 +26,6 @@
     <bool name="config_recents_interface_for_tablets">true</bool>
   
     <!-- Whether to hide the signal bars by default or not. Useful for WiFi only tablets -->
-    <bool name="config_hideSignalBars">true</bool>
+    <!--<bool name="config_hideSignalBars">true</bool>-->
 </resources>
 
